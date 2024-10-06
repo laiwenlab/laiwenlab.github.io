@@ -5,4 +5,4 @@ title: Welcome to the Wen Lab
 
 # Welcome to the Wen Lab
 
-This is the homepage of my lab's website. Here, you will find information about our research, publications, and team.
+The Wen lab at the University of Nevada, Reno studies inflammation in health and disease. We aim to understand how the immune system functions, involving especially neutrophils in inflammation. The primary focus is to apply biosensors and transgenic mouse models to directly visualize immune cell recruitment and function during inflammation, infection and tissue injury in vitro and in vivo. We study inflammatory responses and signaling at molecular, cellular and whole organism levels using state-of-the-art technology, including genome editing, multicolor flow cytometry, TIRF microscopy, intravital imaging, resonant-scanning confocal, and FRET microscopy.

@@ -1,10 +1,13 @@
+/* General styling for the body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Header styling */
 header {
     background: #333;
     color: #fff;
@@ -12,6 +15,7 @@ header {
     text-align: center;
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -27,6 +31,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main content area */
+main {
+    max-width: 800px; /* Set the maximum width of the content area */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Footer styling */
 footer {
     background: #333;
     color: #fff;

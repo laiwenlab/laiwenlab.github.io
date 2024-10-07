@@ -1,51 +1,16 @@
-/* Center the header content */
-header {
-    background-color: #333; /* Background color */
-    color: white; /* Text color */
-    padding: 20px 0; /* Vertical padding */
+/* Apply margin and padding to the entire body */
+body {
+    margin: 50px auto; /* 50px margin top and bottom, auto for horizontal centering */
+    padding: 20px;     /* Optional padding */
+    max-width: 1200px; /* Set a maximum width for your content */
+    background-color: #f5f5f5; /* Optional: Change background color */
 }
 
-/* Centered header container */
-.header-container {
-    max-width: 800px; /* Set a max width for the header */
-    margin: 0 auto; /* Center the container */
-    text-align: center; /* Center the text */
+/* For specific content, like header and footer */
+header, footer {
+    margin-bottom: 40px; /* Adjust bottom margin of header and footer */
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
-/* Center the navigation menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center; /* Center the list items */
-}
-
-nav ul li {
-    display: inline-block; /* Makes each list item take only as much space as needed */
-    margin: 0 15px; /* Space between menu items */
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Optional: Add some hover effects to the links */
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Center the footer content */
-footer {
-    background-color: #333; /* Background color for footer */
-    color: white; /* Text color for footer */
-    padding: 20px 0; /* Vertical padding */
-}
-
-/* Centered footer container */
-.footer-container {
-    max-width: 800px; /* Set a max width for the footer */
-    margin: 0 auto; /* Center the container */
-    text-align: center; /* Center the text */
-}

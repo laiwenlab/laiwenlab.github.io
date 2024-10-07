@@ -1,9 +1,15 @@
 /* Center the header content */
 header {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Centered header container */
+.header-container {
+    max-width: 1200px; /* Set a max width for the header */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center the text */
 }
 
 /* Center the navigation menu */
@@ -28,4 +34,18 @@ nav ul li a {
 /* Optional: Add some hover effects to the links */
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Center the footer content */
+footer {
+    background-color: #333; /* Background color for footer */
+    color: white; /* Text color for footer */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Centered footer container */
+.footer-container {
+    max-width: 1200px; /* Set a max width for the footer */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center the text */
 }

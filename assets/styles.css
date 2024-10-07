@@ -7,7 +7,7 @@ header {
 
 /* Centered header container */
 .header-container {
-    max-width: 1200px; /* Set a max width for the header */
+    max-width: 800px; /* Set a max width for the header */
     margin: 0 auto; /* Center the container */
     text-align: center; /* Center the text */
 }
@@ -45,7 +45,7 @@ footer {
 
 /* Centered footer container */
 .footer-container {
-    max-width: 1200px; /* Set a max width for the footer */
+    max-width: 800px; /* Set a max width for the footer */
     margin: 0 auto; /* Center the container */
     text-align: center; /* Center the text */
 }

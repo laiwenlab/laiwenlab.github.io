@@ -1,49 +1,38 @@
-/* General styling for the body */
+/* Centered content styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Header styling */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+main {
+    max-width: 800px; /* Max width of content */
+    margin: 0 auto;   /* Center content horizontally */
+    padding: 20px;    /* Padding inside the content area */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
-/* Navigation styling */
+/* Basic header and footer styling */
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-}
-
-/* Main content area */
-main {
-    max-width: 800px; /* Set the maximum width of the content area */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-}
-
-/* Footer styling */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }

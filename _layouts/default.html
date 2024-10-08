@@ -11,18 +11,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center; /* Center the container horizontally */
-            background-color: #f0f0f0; /* Subtle background color to differentiate the content */
+            background-color: #f0f0f0;
         }
 
-        /* Main container for page content */
+        /* Main container for centering the entire content */
         .container {
-            max-width: 1000px; /* Limit the width of the entire page */
-            width: 100%; /* Ensure it scales on smaller screens */
-            padding: 20px; /* Add padding around the content */
-            background-color: #ffffff; /* Background color for the content area */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+            max-width: 1000px; /* Limit the width of the content */
+            width: 100%; /* Allow flexibility */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+            background-color: #ffffff; /* Page background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a framed effect */
         }
 
         /* Header styling */
@@ -30,7 +29,12 @@
             background-color: #f5f5f5;
             padding: 20px;
             border-bottom: 1px solid #ddd;
-            text-align: center; /* Center the header text and navigation */
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .header-container h1 {
@@ -40,18 +44,13 @@
 
         nav ul {
             list-style-type: none;
-            margin: 10px 0 0;
+            margin: 0;
             padding: 0;
-            display: inline-block; /* Ensure nav is centered horizontally */
+            display: flex;
         }
 
         nav ul li {
-            display: inline-block;
             margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
         }
 
         nav ul li a {
@@ -68,7 +67,7 @@
         /* Main content styling */
         main {
             padding: 40px 0;
-            text-align: center; /* Center the main content */
+            text-align: left; /* Text alignment remains left */
         }
 
         /* Footer styling */

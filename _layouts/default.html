@@ -5,30 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px; /* Set max width for header content */
+            margin: 0 auto; /* Center the header container */
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #007BFF;
+        }
+
+        /* Main content styling */
+        main {
+            max-width: 1000px; /* Set a max-width for the main content */
+            margin: 40px auto; /* Center the main content */
+            padding: 0 20px; /* Add padding for spacing */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            max-width: 1000px; /* Set max width for footer content */
+            margin: 0 auto; /* Center the footer container */
+        }
+
+        .footer-container p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <header style="background-color: #f5f5f5; padding: 20px;">
-    <div class="header-container" style="display: flex; justify-content: space-between; align-items: center;">
-        <h1 style="margin: 0; font-size: 24px;">{{ site.title }}</h1>
-        <nav>
-            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex;">
-                <li style="margin-right: 20px;"><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li style="margin-right: 20px;"><a href="{{ '/research' | relative_url }}">Research</a></li>
-                <li style="margin-right: 20px;"><a href="{{ '/team' | relative_url }}">Team</a></li>
-                <li style="margin-right: 20px;"><a href="{{ '/publications' | relative_url }}">Publications</a></li>
-                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="header-container">
+            <h1>{{ site.title }}</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/research' | relative_url }}">Research</a></li>
+                    <li><a href="{{ '/team' | relative_url }}">Team</a></li>
+                    <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
+                    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    
     <main>
         {{ content }}
     </main>
-    
+
     <footer>
-        <div class="footer-container"> <!-- Wrap footer content in this div -->
+        <div class="footer-container">
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
         </div>
     </footer>

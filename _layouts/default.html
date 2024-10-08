@@ -11,20 +11,26 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            background-color: #f0f0f0; /* Subtle background color to differentiate the content */
+        }
+
+        /* Main container for page content */
+        .container {
+            max-width: 1000px; /* Limit the width of the entire page */
+            width: 100%; /* Ensure it scales on smaller screens */
+            padding: 20px; /* Add padding around the content */
+            background-color: #ffffff; /* Background color for the content area */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
         }
 
         /* Header styling */
         header {
             background-color: #f5f5f5;
             padding: 20px;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px; /* Set max width for header content */
-            margin: 0 auto; /* Center the header container */
+            border-bottom: 1px solid #ddd;
+            text-align: center; /* Center the header text and navigation */
         }
 
         .header-container h1 {
@@ -34,12 +40,13 @@
 
         nav ul {
             list-style-type: none;
-            margin: 0;
+            margin: 10px 0 0;
             padding: 0;
-            display: flex;
+            display: inline-block; /* Ensure nav is centered horizontally */
         }
 
         nav ul li {
+            display: inline-block;
             margin-right: 20px;
         }
 
@@ -60,9 +67,8 @@
 
         /* Main content styling */
         main {
-            max-width: 1000px; /* Set a max-width for the main content */
-            margin: 40px auto; /* Center the main content */
-            padding: 0 20px; /* Add padding for spacing */
+            padding: 40px 0;
+            text-align: center; /* Center the main content */
         }
 
         /* Footer styling */
@@ -70,8 +76,7 @@
             background-color: #f5f5f5;
             padding: 20px;
             text-align: center;
-            max-width: 1000px; /* Set max width for footer content */
-            margin: 0 auto; /* Center the footer container */
+            border-top: 1px solid #ddd;
         }
 
         .footer-container p {
@@ -81,29 +86,31 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>{{ site.title }}</h1>
-            <nav>
-                <ul>
-                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                    <li><a href="{{ '/research' | relative_url }}">Research</a></li>
-                    <li><a href="{{ '/team' | relative_url }}">Team</a></li>
-                    <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
-                    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <h1>{{ site.title }}</h1>
+                <nav>
+                    <ul>
+                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                        <li><a href="{{ '/research' | relative_url }}">Research</a></li>
+                        <li><a href="{{ '/team' | relative_url }}">Team</a></li>
+                        <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
+                        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        {{ content }}
-    </main>
+        <main>
+            {{ content }}
+        </main>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer-container">
+                <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

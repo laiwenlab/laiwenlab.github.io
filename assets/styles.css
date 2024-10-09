@@ -61,7 +61,7 @@ nav ul li a:hover {
 /* Home Intro section with background banner */
 .home-intro {
     position: relative;
-    background-image: url("/assets/images/banner.png"); /* Ensure the path is correct */
+    background-image: url("/assets/images/Banner.png"); /* Ensure the path is correct */
     background-size: cover;
     background-position: center;
     color: white;

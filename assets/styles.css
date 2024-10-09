@@ -58,20 +58,25 @@ nav ul li a:hover {
     color: #007BFF;
 }
 
-/* Banner section */
-.home-banner img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 20px;
+/* Home Intro section with background banner */
+.home-intro {
+    position: relative;
+    background-image: url("path-to-banner-image.jpg"); /* Update with the actual path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px; /* Add padding to position text properly */
+    text-align: center;
+    height: 300px; /* Set height for the background section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Introduction section */
-.home-intro {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+.home-intro-content {
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .home-intro h2 {
@@ -82,19 +87,7 @@ nav ul li a:hover {
 .home-intro p {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #555;
-}
-
-.home-intro .btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.home-intro .btn:hover {
-    background-color: #0056b3;
+    color: #f0f0f0;
 }
 
 /* Main content styling */
@@ -145,6 +138,10 @@ footer {
     footer {
         padding: 15px;
     }
+
+    .home-intro {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -158,5 +155,9 @@ footer {
 
     nav ul li {
         margin-bottom: 8px;
+    }
+
+    .home-intro {
+        height: 200px;
     }
 }

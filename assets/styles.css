@@ -61,20 +61,20 @@ nav ul li a:hover {
 /* Home Intro section with background banner */
 .home-intro {
     position: relative;
-    background-image: url("path-to-banner-image.jpg"); /* Update with the actual path */
+    background-image: url("/assets/images/banner.png"); /* Ensure the path is correct */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 60px 20px; /* Add padding to position text properly */
+    padding: 60px 20px;
     text-align: center;
-    height: 300px; /* Set height for the background section */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .home-intro-content {
-    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
     padding: 20px;
     border-radius: 10px;
 }
@@ -88,6 +88,19 @@ nav ul li a:hover {
     font-size: 18px;
     margin-bottom: 20px;
     color: #f0f0f0;
+}
+
+/* Re-added Learn More Button styling */
+.home-intro .btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-intro .btn:hover {
+    background-color: #0056b3;
 }
 
 /* Main content styling */

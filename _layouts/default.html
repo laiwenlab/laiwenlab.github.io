@@ -8,11 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Home Banner Section -->
-        <section class="home-banner">
-            <img src="{{ '/assets/banner.png' | relative_url }}" alt="Research Lab Banner">
-        </section>
-
         <!-- Header Section -->
         <header>
             <div class="header-container">
@@ -29,11 +24,12 @@
             </div>
         </header>
 
-        <!-- Home Intro Section -->
+        <!-- Home Intro Section with Background Image -->
         <section class="home-intro">
-            <h2>Welcome to the Wen Lab</h2>
-            <p>The Wen lab at the University of Nevada, Reno focuses on studying inflammation in health and disease. We aim to understand how the immune system functions, particularly neutrophils, in inflammation.</p>
-            <a href="{{ '/research' | relative_url }}" class="btn">Learn More</a>
+            <div class="home-intro-content">
+                <h2>Welcome to the Wen Lab</h2>
+                <p>The Wen lab at the University of Nevada, Reno focuses on studying inflammation in health and disease. We aim to understand how the immune system functions, particularly neutrophils, in inflammation.</p>
+            </div>
         </section>
 
         <!-- Main content placeholder -->
@@ -50,4 +46,3 @@
     </div>
 </body>
 </html>
-

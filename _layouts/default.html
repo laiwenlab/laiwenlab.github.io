@@ -5,170 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
-    <style>
-        /* General body styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Main container for centering the entire content */
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            padding: 20px;
-            background-color: #ffffff;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Header styling */
-        header {
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-container h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-            color: #007BFF;
-        }
-
-        /* Home Banner Styling */
-        .home-banner img {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .home-intro {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .home-intro h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .home-intro p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .home-intro .btn {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .home-intro .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Main content styling */
-        main {
-            padding: 40px 0;
-            text-align: left;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #f5f5f5;
-            padding: 20px;
-            text-align: center;
-            border-top: 1px solid #ddd;
-        }
-
-        .footer-container p {
-            margin: 0;
-            font-size: 14px;
-        }
-
-        /* Responsive design using media queries */
-        @media (max-width: 768px) {
-            .header-container, main, footer {
-                padding: 10px;
-            }
-
-            .header-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul li {
-                margin-bottom: 10px;
-            }
-
-            h1 {
-                font-size: 22px;
-            }
-
-            footer {
-                padding: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 18px;
-            }
-
-            nav ul li {
-                margin-bottom: 8px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
+        <!-- Home Banner Section -->
+        <section class="home-banner">
+            <img src="{{ '/assets/banner.jpg' | relative_url }}" alt="Research Lab Banner">
+        </section>
+
         <!-- Header Section -->
         <header>
             <div class="header-container">
@@ -185,16 +29,11 @@
             </div>
         </header>
 
-        <!-- Home Banner Section (optional for image) -->
-        <section class="home-banner">
-            <img src="path-to-banner-image.jpg" alt="Research Lab Banner">
-        </section>
-
         <!-- Home Intro Section -->
         <section class="home-intro">
             <h2>Welcome to the Wen Lab</h2>
             <p>The Wen lab at the University of Nevada, Reno focuses on studying inflammation in health and disease. We aim to understand how the immune system functions, particularly neutrophils, in inflammation.</p>
-            <a href="/research" class="btn">Learn More</a>
+            <a href="{{ '/research' | relative_url }}" class="btn">Learn More</a>
         </section>
 
         <!-- Main content placeholder -->
@@ -211,3 +50,4 @@
     </div>
 </body>
 </html>
+

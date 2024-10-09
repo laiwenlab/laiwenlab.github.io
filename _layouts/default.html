@@ -13,17 +13,17 @@
             padding: 0;
             background-color: #f0f0f0;
             display: flex;
-            justify-content: center; /* Center the page horizontally */
+            justify-content: center;
         }
 
         /* Main container for centering the entire content */
         .container {
-            max-width: 1000px; /* Set a maximum width for the content */
-            width: 100%; /* Make sure the content container is responsive */
+            max-width: 1000px; /* Set a maximum width for larger screens */
+            width: 100%; /* Allow the container to be responsive */
             padding: 20px;
             background-color: #ffffff;
-            margin: 0 auto; /* Ensure the container is centered */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for a framed effect */
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Header styling */
@@ -38,7 +38,7 @@
             justify-content: space-between;
             align-items: center;
             max-width: 1000px;
-            margin: 0 auto; /* Centering the header content */
+            margin: 0 auto;
         }
 
         .header-container h1 {
@@ -51,6 +51,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap; /* Allow the menu to wrap for smaller screens */
         }
 
         nav ul li {
@@ -71,9 +72,9 @@
         /* Main content styling */
         main {
             padding: 40px 0;
-            text-align: left; /* Keep the text aligned to the left */
+            text-align: left;
             max-width: 1000px;
-            margin: 0 auto; /* Centering the main content */
+            margin: 0 auto;
         }
 
         /* Footer styling */
@@ -83,12 +84,55 @@
             text-align: center;
             border-top: 1px solid #ddd;
             max-width: 1000px;
-            margin: 0 auto; /* Centering the footer */
+            margin: 0 auto;
         }
 
         .footer-container p {
             margin: 0;
             font-size: 14px;
+        }
+
+        /* Responsive design using media queries */
+        @media (max-width: 768px) {
+            .header-container, main, footer {
+                padding: 10px;
+            }
+
+            .header-container {
+                flex-direction: column; /* Stack the title and nav vertically on smaller screens */
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 22px; /* Adjust the font size for smaller screens */
+            }
+
+            footer {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            nav ul li {
+                margin-bottom: 8px;
+            }
         }
     </style>
 </head>
